@@ -1,0 +1,914 @@
+@font-face {
+    font-family: 'gess';
+    src: url(../fonts/gess.otf);
+}
+@font-face {
+    font-family: 'tajawal';
+    src: url(../fonts/tajawal.ttf);
+}
+
+reset
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, blockquote, pre, form, fieldset, table, th, td {
+	margin: 0;
+	padding: 0;
+	direction: rtl;
+}
+html{
+    height: 100%;
+}
+
+body {
+    font-family: 'tajawal';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+/*start navbar*/
+.header .pages-links{
+    margin-right: 11px;
+}
+.header form{
+    margin-right: 10%;
+    margin-left: 34px;
+}
+.header .bg-light{
+    background-color: white !important;
+}
+.header ul .dropdown-types{
+    border: 1px solid #90b557;
+}
+.header ul li a{
+    color: black !important;
+    text-decoration: none;
+}
+.header ul li a:hover{
+    font-weight: 600 !important;
+}
+.header ul  .active a{
+    font-weight: 600 !important;
+}
+.header .link-enter{
+    color: black !important;
+    font-weight: 600;
+    transition: .3s all ease-in-out;
+}
+.header .link-enter:hover{
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: .3s all ease-in-out;
+}
+.header form input{
+    border-radius: 20px 0px 0px 20px;
+    border: 2px solid #696969;
+    font-size: 10px;
+    color:#696969 ;
+}
+.header form .select-sec{
+    background: #90b557;
+    color: white;
+    border: 2px solid #90b557;
+    border-radius: 0px 20px 20px 0px;
+}
+.header form .select-sec:hover {
+    border-radius: 0px 20px 20px 0px;
+    color: black;
+    text-decoration: none;
+}
+
+@media (min-width:320px) and (max-width:991px){
+    .header form .select-sec{
+        width: 100%;
+    border-radius: 20px;
+    }
+    .header form input{
+        width: 100% !important;
+        border-radius: 20px;
+
+    }
+
+}
+@media (min-width:992px) and (max-width:1313px){
+    .header form .select-sec{
+        width: 100%;
+    border-radius: 20px;
+    }
+    .header form input{
+        width: 100% !important;
+        border-radius: 20px;
+
+    }
+
+}
+/*end navbar*/
+/* start background-sec */
+.background-sec{
+    background-image: url(../images/photo_2021-06-14_11-49-37.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    object-fit: cover;
+
+}
+.background-sec h2{
+    color: white;
+    padding-top: 44px;
+
+}
+.background-sec p{
+    color: #90b557;
+    font-size: 21px;
+    padding-top: 13px;
+}
+/* end background-sec */
+/* start images section */
+
+.img-section .wrapper .single-img{
+    margin-bottom: 17px;
+    transition: 1s all;
+
+}
+.img-section .wrapper .single-img img{
+   width: 100%;
+   height: 200px;
+    opacity: .8;
+    transition: .9s all;
+    object-fit: cover;
+}
+.img-section .wrapper .single-img:hover{
+transform: scale(1.1);
+z-index: 2;
+box-shadow: 0px 2px 20px black;
+
+}
+.img-section .wrapper .single-img:hover img{
+    opacity: 1;
+
+}
+
+
+/* end images section */
+/* start buttons-sec */
+.buttons-sec button{
+    width: 100%;
+    background: #90b557;
+    border: 1px solid #90b557;
+    font-size: 18px;
+    height: 50px;
+}
+.buttons-sec button a{
+    color: white !important;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+}
+.buttons-sec button a:hover{
+    transition: .3s all ease-in-out;
+    font-weight: 700;
+}
+/* end buttons-sec */
+/* start footer */
+.footer{
+    background: #353535;
+    color: white;
+    margin-top: auto;
+}
+.footer button {
+    width: 100%;
+background: none;
+border: none;
+
+}
+.footer button a{
+    color: white;
+    font-weight: 600;
+}
+.footer i{
+
+    font-size: 20px;
+    padding-left: 10px;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+.footer .col-icons-center{
+    text-align: center;
+}
+.footer p{
+    font-size: 17px !important;
+}
+/* end footer */
+/* start places-section page */
+.places-section button{
+    width: 100%;
+    background: #90b557;
+    border: 1px solid #90b557;
+    font-size: 18px;
+    height: 50px;
+
+}
+.places-section button a{
+    color: white !important;
+    text-decoration: none;
+    transition: .3s all ease-in-out;
+}
+.places-section button a:hover{
+    transition: .3s all ease-in-out;
+    font-weight: 700;
+}
+/* end places-section page */
+/* start Men's barber page */
+
+.cards-sec .card-men{
+    border: none;
+}
+.cards-sec .card-men img{
+    border-radius: 9px !important;
+}
+.cards-sec .card-men h5{
+    font-size: 21px;
+}
+.cards-sec .card-men .fa-heart{
+    color: red !important;
+    padding-right: 9px !important;
+}
+.cards-sec .card-men p{
+    color: #b7b7b7 !important;
+    padding-bottom: 11px !important;
+}
+.cards-sec .card-men .button-1 {
+    width: 88%;
+    background: #90b557;
+    border: 1px solid #90b557;
+}
+.cards-sec .card-men h5 a{
+    text-decoration: none;
+    color: #363738;
+}
+.cards-sec .card-men h5 a:hover{
+    color: #90b557;
+}
+
+/* end Men's barber page */
+/* start places-sec page */
+.places-sec .ui-card{
+    /* width: 285px; */
+    width: 100%;
+    background: radial-gradient(#111 50% , #000 100%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+}
+.places-sec .ui-card img{
+    max-width: 100%;
+    display: block;
+    transform: scale(1.3);
+    transition: all .3s ease-in-out;
+}
+.places-sec .ui-card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: .3;
+
+}
+.places-sec .ui-card .description{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.places-sec .ui-card .description a{
+
+    padding: 10px 25px;
+
+    transform: translateY(30px);
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: white;
+
+
+}
+.places-sec .ui-card .description button{
+    background: #90b557;
+    border: 1px solid #90b557;
+    width: 100%;
+    height: 45px;
+}
+
+.places-sec .ui-card .description a:hover{
+    font-weight: 700;
+}
+
+
+
+/* end places-sec page */
+/* start sesonticket page */
+.paragraph-section1 p{
+    text-align: center;
+    font-size: 20px;
+    color: #8a8d90;
+}
+/* end sesonticket page */
+/* start offers page */
+
+.offers-cards .card{
+    border-radius: 10px;
+}
+.offers-cards .card img{
+    border-radius: 10px 10px 0 0;
+}
+.offers-cards .card .card-body{
+    padding: 0 !important;
+}
+.offers-cards .card  button{
+    background: #90b557;
+    border: 1px solid #90b557;
+    width: 100%;
+    height: 45px;
+}
+.offers-cards .card  button a{
+    color: white;
+    text-decoration: none;
+}
+.offers-cards .card  button a:hover{
+    font-weight: 700;
+}
+.offers-cards .card .card-body  p{
+    padding: 12px !important;
+    font-size: 18px !important;
+}
+/* end offers page */
+/* start paragraph section page */
+.para-section-card  p{
+    color: #88898a !important;
+    font-size: 21px !important;
+    line-height: 28px !important;
+}
+.button-section4 input{
+    width: 75%;
+    background: #efefef;
+    border: none;
+    height: 50px;
+    margin-left: -4px;
+}
+.button-section4 button{
+    background: #90b557 !important;
+    border: none !important;
+    height: 50px !important;
+}
+.button-section4 button a{
+    color: white;
+    text-decoration: none;
+    transition: .9s ;
+}
+.button-section4 button a:hover{
+    transition: .9s ;
+    font-weight: 700;
+}
+.button-section4 .row .col-cards-7dod{
+    margin-bottom: 59px;
+}
+
+/* end paragraph section page */
+/* start electronic card page */
+.background-sec h4{
+    color: white;
+    padding-top: 44px;
+}
+/* end electronic card page */
+/* start show card page */
+.card-info .row label{
+    width: 100%;
+    text-align: right;
+    font-size: 21px;
+    color: #90b557;
+}
+.card-info .row input{
+   width: 100%;
+    border: 1px solid #b7b3b3;
+    background: #f1f1f1;
+}
+.card-info .row select{
+    width: 100%;
+    border: 1px solid #b7b3b3;
+    background: #f1f1f1;
+
+}
+.card-info .row  button{
+    width: 100%;
+    background: #90b557;
+    border: none;
+    height: 29px;
+
+}
+.card-info .row  button a{
+    color: white;
+    transition: .5s;
+    text-decoration: none;
+
+
+}
+.card-info .row  button a:hover{
+    transition: .5s;
+    font-weight: 600;
+}
+.card-info .row .button-1-save{
+    width: 100%;
+    background: #90b557;
+    border: none;
+    height: 35px;
+}
+
+
+/* end show card page */
+/* start about section page */
+.about-us-sec p{
+    font-size: 19px;
+    color: #797979;
+
+}
+
+.about-us-sec i{
+    font-size: 35px;
+    padding-top: 33px;
+    color: white;
+}
+.about-us-sec img{
+    width: 118px;
+
+    padding-bottom: 26px;
+    padding-top: 42px;
+
+}
+/* end about section page */
+/* start discount page */
+
+.background-discount img{
+    border-radius: 6px !important;
+}
+.background-discount h1{
+    color: white;
+    font-size: 20px !important;
+}
+.background-discount p{
+    font-size: 13px !important;
+    padding-top: 10px !important;
+}
+.background-discount button{
+    background: #90b557 !important;
+    border: none !important;
+    width: 90px !important;
+}
+.background-discount button a{
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+.background-discount button a:hover{
+    transition: .5s;
+    font-weight: 600;
+}
+.background-discount i{
+    color: #90b557;
+    padding-right: 6px;
+    font-size: 10px;
+}
+.background-discount .social-media-icons-1 i{
+    color: white;
+    font-size: 19px;
+    padding-top: 10px;
+
+}
+@media (min-width:320px) and (max-width:576px){
+    .background-discount{
+        height: 100%;
+    }
+    .background-discount img{
+        float: right;
+    }
+    .background-discount .col-data{
+        text-align: right;
+    }
+}
+@media (min-width:577px) {
+    .background-discount .col-data{
+        text-align: right;
+    }
+
+}
+.paragraph-1 p{
+    font-size: 21px;
+    font-weight: 600;
+}
+.discount-sec-1 .row{
+    background: #90b557;
+    color: white;
+    margin-bottom: 10px;
+}
+.discount-sec-1 .row .col1{
+    background: #282929;
+    color: white;
+    margin-right: 10px;
+}
+.discount-sec-1  p{
+    padding: 11px;
+}
+.details-sec label{
+    width: 100%;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 600;
+    color: #90b557;
+}
+.details-sec input{
+    width: 100%;
+    background: #f3f3f3;
+    border: 1px solid #c7c7c7;
+}
+/* end discount page */
+/* start home page */
+.background-home-sec{
+    background-image: url(../images/photo_2021-06-14_11-49-23.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+@media (min-width:320px) and (max-width:991px){
+    .background-home-sec .container{
+        margin: 25px auto !important;
+    }
+}
+.background-home-sec .container{
+    margin: 113px auto;
+}
+.background-home-sec .row{
+    background-color: black;
+    opacity: 0.8;
+}
+.background-home-sec .row h1{
+    color: #90b557;
+    font-size: 39px;
+    font-weight: 600;
+}
+.background-home-sec .row p{
+    color: white !important;
+    font-size: 21px !important;
+    padding-top: 16px !important;
+}
+.background-home-sec .row select{
+    background: white;
+    height: 30px;
+    margin-top: 10px;
+
+}
+.background-home-sec .row input{
+    background: white;
+    border: none;
+    height: 29px;
+    width: 75%;
+    margin-top: 10px;
+}
+.adv-sale  .container{
+    background: #f3f3f3;
+}
+.adv-sale  .row{
+    padding-bottom: 27px;
+
+}
+.adv-sale  .row img{
+    width: 100%;
+
+
+}
+
+.adv-sale  .row p{
+    color: #90b557;
+    font-size: 20px;
+    padding-top: 43px;
+
+}
+.popular-section h1{
+    font-size: 32px;
+}
+.popular-section .ui-card{
+
+    background: radial-gradient(#111 50% , #000 100%);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+}
+.popular-section .ui-card img{
+    max-width: 100%;
+    display: block;
+    transform: scale(1.3);
+    transition: all .3s ease-in-out;
+    height: 258px;
+}
+.popular-section .ui-card:hover img{
+    transform: scale(1.1) translateY(-20px);
+    opacity: .3;
+
+}
+.popular-section .ui-card .description{
+    position: absolute;
+    left: 0;
+    bottom: 29%;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.popular-section .ui-card .description a{
+    display: inline-block;
+    padding: 10px 25px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    color: white;
+
+
+}
+.popular-section .ui-card .description a h3{
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.popular-section .ui-card:hover .description a{
+    opacity: 1;
+    transform: translateY(0);
+
+
+}
+.popular-section .ui-card .description a:hover{
+    color: #D19200;
+}
+.footer-home {
+    background: #f3f3f3;
+}
+.footer-home .row a i{
+    color: #90b557;
+    padding-left: 10px;
+    font-size: 21px;
+
+}
+.footer-home .row .copy-right{
+    font-size: 16px !important;
+    padding-top: 10px !important;
+    text-align: center;
+
+}
+.footer-home .row .fa-map-marker-alt{
+    float: right;
+}
+.footer-home .row .info p {
+    text-align: right;
+    font-size: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #888888;
+
+}
+.footer-home .row  p strong{
+    padding-right: 11px;
+    color: #90b557;
+}
+.footer-home .row .pages-links  p{
+    text-align: center;
+    padding-bottom: 19px;
+}
+@media (min-width:320px) and (max-width:767px){
+    .footer-home .row .pages-links  p{
+        text-align: right;
+    }
+}
+.footer-home .row .pages-links  a{
+    color: #90b557;
+    text-decoration: none;
+    transition: .3s;
+    text-align: center;
+
+}
+.footer-home .row .pages-links  a:hover{
+    transition: .3s;
+font-weight: 600;
+}
+/* end home page */
+/* start log in page */
+.background-login{
+    background-image: url(../images/photo_2021-06-23_19-30-55.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+.background-login .info-login {
+    background: #f7f7f7;
+    margin-top: 9%;
+    box-shadow: 10px 10px 10px #e2e2e2;
+
+}
+.background-login .row h5{
+    text-align: center;
+    padding-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #616161;
+}
+.background-login .row .num-1{
+    width: 100%;
+    font-size: 16px;
+    text-align: right;
+    margin-top: 37px;
+
+}
+.background-login .row .name ,.background-login .row .password{
+    width: 91%;
+    float: right;
+    height: 41px;
+
+}
+.background-login .row .checkbox{
+    margin-left: 3% !important;
+    float: right !important;
+    margin-top: 10px !important;
+    margin-right: 10px !important;
+
+}
+.background-login .row .remeberme{
+    margin-left: 77%;
+    width: unset !important;
+    padding-top: 5px;
+}
+@media (min-width:320px) and (max-width:412px){
+    .background-login .row .remeberme{
+        float: right;
+        margin-left: 74%;
+        padding-top: 10px !important;
+    }
+}
+@media (min-width:413px) and (max-width:489px){
+    .background-login .row .checkbox{
+        margin-left: 4% !important;
+    }
+
+}
+@media (min-width:490px) and (max-width:767px){
+    .background-login .row .remeberme{
+        margin-left: 81%;
+    }
+    .background-login .row .checkbox{
+        margin-left: 5% !important;
+    }
+
+}
+@media (min-width:768px) and (max-width:1200px){
+    .background-login .row .remeberme{
+        margin-left: 66%;
+        padding-top: 3px;
+    }
+
+
+}
+.background-login .row button{
+    background: #90b557;
+    width: 90%;
+    float: right;
+    border: none;
+    height: 40px;
+    margin-top: 76px;
+    margin-bottom: 30px;
+}
+.background-login .row button a{
+    color: white !important;
+    text-decoration: none;
+    transition: .2s;
+}
+.background-login .row button a:hover{
+    transition: .2s;
+    font-weight: 600;
+
+}
+/* end log in page */
+/* start card hodoud  page*/
+.background-card{
+    background-image: url(../images/photo_2021-07-19_18-42-31.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-hodoud p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+.card-hodoud .para{
+    font-weight: 600;
+}
+.card-hodoud img{
+    width: 149px;
+    margin-top: -40px;
+}
+.card-hodoud form input{
+
+    text-decoration: ltr;
+    background-color: unset !important;
+    border: unset !important;
+
+    width: 100%;
+    text-align: left;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+/* end card hodoud  page*/
+/* start details page */
+.image-section img{
+    width: 100%;
+}
+.paragraph-sec p{
+    font-size: 20px;
+    color: #6d6f71;
+}
+.services-sec {
+    background: #c1e885;
+}
+.services-sec h1{
+    font-size: 35px;
+    padding-bottom: 21px;
+    color: #454748;
+    font-weight: 600;
+}
+.services-sec .row .col  p{
+    font-size: 18px;
+    color: #494b4c;
+}
+/* end details page */
+/*  start discount1 page */
+.offers-discount-sec .container{
+    background: #bbd88e;
+}
+.offers-discount-sec .row   button{
+    background: white;
+    border: unset;
+    width: 90%;
+    height: 50px;
+}
+.offers-discount-sec .row   button a{
+    font-size: 19px;
+    color: #4c4d4e;
+    text-decoration: none;
+}
+.offers-discount-sec .row   button a:hover{
+    color: #bbd88e;
+    font-weight: 600;
+}
+.region-sec .row  .card{
+    box-shadow: 0px 0px 10px #9e9c9c;
+}
+.region-sec .row  .card a{
+    color: #414242;
+    text-decoration: none;
+}
+.region-sec .row  .card a:hover{
+    color: #bbd88e;
+    font-weight: 600;
+}
+/*  end  discount1 page */
+/* start region-header page */
+.region-header h1{
+    font-size: 22px;
+    font-weight: 600;
+    color: #90b557;
+
+}
+.region-card-sec .row  .card{
+    box-shadow: 0px 0px 10px #9e9c9c;
+}
+.region-card-sec .row  .card a{
+    color: #414242;
+    text-decoration: none;
+}
+.region-card-sec .row  .card a:hover{
+    color: #bbd88e;
+    font-weight: 600;
+}
+/*end region-header page */
+
+
+/* --------------------------------------------- */
+
+@media (min-width:320px) and (max-width:1313px){
+    .header form button{
+        width: 100% !important;
+    }
+}
+
+@media (min-width:320px) and (max-width:1313px){
+    .background-sec{
+        height: auto !important;
+    }
+}
